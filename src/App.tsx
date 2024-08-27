@@ -1,14 +1,20 @@
-import './App.scss'
+import React from "react";
+import Button from "./elements/Button";
+import { IoMdShareAlt } from "react-icons/io";
 
-function App() {
+import "./App.scss";
 
-  console.log("fwefwe");
-  
+const App: React.FC = () => {
+  const handleClick = () => {
+    console.log("Clicked!");
+  };
 
   return (
-    <>
-    </>
-  )
-}
+    <Button
+      onClick={handleClick}
+      Icon={IoMdShareAlt}
+    />
+  );
+};
 
-export default App
+export default App;
