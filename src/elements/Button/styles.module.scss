@@ -1,0 +1,11 @@
+.button {
+  @apply inline-flex h-[32px] w-[32px] items-center justify-center rounded-full bg-light-grayish-blue focus:bg-desaturated-dark-blue;
+
+  &:focus .buttonIcon {
+    @apply fill-light-grayish-blue ;
+  }
+}
+
+.buttonIcon {
+  @apply h-[20px] w-[20px] fill-desaturated-dark-blue;
+}
