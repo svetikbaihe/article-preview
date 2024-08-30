@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   if (href) {
     return (
-      <a href={href} className={cn(className, styles.button)}>
+      <a href={href} target="_blank" className={cn(className)}>
         {<Icon className={cn(classNameIcon, styles.buttonIcon)} />}
       </a>
     );

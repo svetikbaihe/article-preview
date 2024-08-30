@@ -1,0 +1,21 @@
+.mobile_popover {
+  @apply w-full rounded-b-lg bg-very-dark-grayish-blue;
+  @apply absolute z-[2] p-5;
+}
+
+.desktop_popover {
+  @apply max-w-[15.5rem] rounded-md bg-very-dark-grayish-blue z-[2] px-9 py-[1.125rem];
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 86.8%;
+    left: 11%;
+    transform: translateX(-11%);
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid hsl(217, 19%, 35%);
+  }
+}

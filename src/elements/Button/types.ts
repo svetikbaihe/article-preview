@@ -1,5 +1,5 @@
 export interface ButtonProps {
-  onClick: VoidFunction;
+  onClick?: VoidFunction;
   Icon: React.ElementType;
   className?: string;
   classNameIcon?: string;

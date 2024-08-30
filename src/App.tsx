@@ -1,19 +1,25 @@
 import React from "react";
-import Button from "./elements/Button";
+import Popover from "@components/Popover";
 import { IoMdShareAlt } from "react-icons/io";
+import { LiaFacebookSquare } from "react-icons/lia";
+import { RxTwitterLogo } from "react-icons/rx";
+import { AiOutlinePinterest } from "react-icons/ai";
+
+
 
 import "./App.scss";
+import Button from "@elements/Button";
 
 const App: React.FC = () => {
-  const handleClick = () => {
-    console.log("Clicked!");
-  };
-
   return (
-    <Button
-      onClick={handleClick}
-      Icon={IoMdShareAlt}
-    />
+    <Popover buttonIcon={IoMdShareAlt}>
+      <div>
+        <p>SHARE</p>
+        <Button href="https://www.facebook.com" Icon={LiaFacebookSquare} />
+        <Button href="https://www.twitter.com" Icon={RxTwitterLogo} />
+        <Button href="https://www.pinterest.com" Icon={AiOutlinePinterest} />
+      </div>
+    </Popover>
   );
 };
 
