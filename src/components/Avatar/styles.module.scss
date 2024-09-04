@@ -2,14 +2,6 @@
   @apply w-[2.5rem] h-[2.5rem] rounded-full;
 }
 
-.name_avatar {
-  @apply text-very-dark-grayish-blue text-[0.8rem] font-bold;
-}
-
-.date_avatar {
-  @apply text-light-grayish-blue text-[0.8rem];
-}
-
 .info_wrapper {
   @apply flex justify-between flex-col;
 }

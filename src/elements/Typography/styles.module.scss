@@ -1,0 +1,31 @@
+.text_size_subtitle {
+  @apply text-base;
+}
+
+.text_size_body {
+  @apply text-sm;
+}
+
+.text_size_overline {
+  @apply text-xs;
+}
+
+.text_color_dark_grayish {
+  @apply text-very-dark-grayish-blue;
+}
+
+.text_color_grayish {
+  @apply text-grayish-blue;
+}
+
+.text_color_light {
+  @apply text-light-grayish-blue;
+}
+
+.text_weight_medium {
+  @apply font-medium;
+}
+
+.text_weight_bold {
+  @apply font-bold;
+}
