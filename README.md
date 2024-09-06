@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/svetikbaihe/article-preview.git)
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [GitHub](https://github.com/svetikbaihe/article-preview.git)
+- Live Site URL: [Vercel](https://article-preview-pied.vercel.app/)
 
 ## My process
 
@@ -77,5 +77,5 @@ There is still work with the general project preparation and configuration. I gu
 
 ## Acknowledgments
 
-- Kudos to my mentor - [@ArtemPapusha] https://github.com/ArtemPapusha 
+- Kudos to my mentor - [@ArtemPapusha](https://github.com/ArtemPapusha) 
 
