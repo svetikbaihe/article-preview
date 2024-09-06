@@ -1,8 +1,9 @@
+export declare const textColorDarkBlue: string;
 export declare const textColorDarkGrayish: string;
-export declare const textColorGrayish: string;
-export declare const textColorLight: string;
+export declare const textColorGrayishBlue: string;
 export declare const textSizeBody: string;
-export declare const textSizeOverline: string;
+export declare const textSizeOverline1: string;
+export declare const textSizeOverline2: string;
 export declare const textSizeSubtitle: string;
 export declare const textWeightBold: string;
 export declare const textWeightMedium: string;

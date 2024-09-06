@@ -1,21 +1,52 @@
 .mobile_popover {
-  @apply w-full rounded-b-lg bg-very-dark-grayish-blue;
-  @apply absolute z-[2] p-5;
+  @apply w-full rounded-b-lg bg-very-dark-grayish-blue absolute z-[-1] py-[1.6rem] px-[1.93rem] bottom-0 right-0
+  md:rounded-br-lg;
 }
 
 .desktop_popover {
-  @apply max-w-[15.5rem] rounded-md bg-very-dark-grayish-blue z-[2] px-9 py-[1.125rem];
+  @apply max-w-[15.5rem] rounded-md bg-very-dark-grayish-blue z-[2] px-9 py-[1.125rem] absolute bottom-[5.7rem] right-[-4.55rem] md:py-4;
 
   &:before {
     content: '';
     position: absolute;
-    bottom: 86.8%;
-    left: 11%;
+    bottom: -0.75rem;
+    right: 6.68rem;
     transform: translateX(-11%);
     width: 0;
     height: 0;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
     border-top: 13px solid hsl(217, 19%, 35%);
+  }
+}
+
+.button_popover_focus {
+  @apply bg-desaturated-dark-blue;
+}
+
+.button_icon_popover_focus {
+  @apply fill-light-grayish-blue;
+}
+
+.share_button {
+  @apply z-[1]; 
+}
+
+@media (960px > width > 767px){
+  .desktop_popover {
+    @apply bottom-[0.68rem] right-[6.55rem];
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 1rem;
+      right: -1.7rem;
+      transform: translateX(-11%);
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+      border-left: 13px solid hsl(217, 19%, 35%);
+    }
   }
 }

@@ -8,17 +8,18 @@ const Typography: React.FC<TypographyProps> = ({
   type,
   color,
   weight,
-  element,
+  element = 'p',
   className = "",
 }) => {
   const classNames = cn(className, {
     [styles.textSizeBody]: type === "body",
     [styles.textSizeSubtitle]: type === "subtitle",
-    [styles.textSizeOverline]: type === "overline",
+    [styles.textSizeOverline1]: type === "overline-1",
+    [styles.textSizeOverline2]: type === "overline-2",
 
     [styles.textColorDarkGrayish]: color === "dark-grayish",
-    [styles.textColorGrayish]: color === "grayish",
-    [styles.textColorLight]: color === "light",
+    [styles.textColorDarkBlue]: color === "dark-blue",
+    [styles.textColorGrayishBlue]: color === "grayish-blue",
 
     [styles.textWeightMedium]: weight === "medium",
     [styles.textWeightBold]: weight === "bold",

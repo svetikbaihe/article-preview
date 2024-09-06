@@ -1,9 +1,5 @@
 .button {
-  @apply p-[0.5em] rounded-full bg-light-grayish-blue focus:bg-desaturated-dark-blue;
-
-  &:focus .buttonIcon {
-    @apply fill-light-grayish-blue;
-  }
+  @apply p-[0.5em] rounded-full bg-light-grayish-blue;
 }
 
 .buttonIcon {
