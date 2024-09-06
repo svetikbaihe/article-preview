@@ -12,7 +12,7 @@ import styles from "./styles.module.scss";
 const Article: React.FC = () => {
   return (
     <div className={styles.article}>
-      <div role="img" className={styles.articleImg} />
+      <div role="img" aria-label="green-drawers" className={styles.articleImg} />
 
       <div className={styles.contentWrapper}>
         <div className={styles.articleTextWrapper}>

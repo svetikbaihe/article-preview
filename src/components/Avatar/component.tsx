@@ -8,7 +8,7 @@ const Avatar: React.FC<AvatarProps> = ({ img, name, date }) => {
   return (
     <div className={styles.avatarWrapper}>
       {img ? (
-        <img src={img} className={styles.imgAvatar}></img>
+        <img src={img} alt="Michelle-Appleton" className={styles.imgAvatar}></img>
       ) : (
         <FaCircleUser className={styles.iconUser} />
       )}
