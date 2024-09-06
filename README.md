@@ -1,51 +1,81 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Article preview component solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+Users should be able to:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- View the optimal layout for the component depending on their device's screen size
+- See the social media share links when they click the share icon
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Screenshots
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+![Popover for screens more than 960px](public/screenshots/More-than-960px.png)
+![Popover for screens between 960px-767px](public/screenshots/960px-767px.png)
+![Popover for screens less than 767px](public/screenshots/Less-than-767px.png)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# article-preview
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/svetikbaihe/article-preview.git)
+- Live Site URL: [Add live site URL here]()
+
+## My process
+
+### Built with
+
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Typescript
+- [React](https://reactjs.org/) - JS library
+- Sass
+- Tailwind
+- ESLint + Prettier
+- Vite
+
+
+### What I learned
+
+This is my first React project, so I am definitely happy about it. 
+
+Through this small but important project I have learned how to use different libraries such as classnames, react-responsive, react-icons step by step. 
+
+I have learned a basic React usage without react-router, aka SPA (Single Page Application).
+
+### Continued development
+
+I absolutely need to contunue reading a React documentation. I have just started to work with it so there is a myriad things to practice and learn.
+
+There is still work with the general project preparation and configuration. I guess there are some possible issues with ESLint and Prettier configurations.
+
+### Useful resources
+
+- [React](https://react.dev/) - Everyone who learns React should peruse this documentation.
+
+- [Фрілансер по життю](https://fls.guru/) - This is an amazing Ukrainian web devoloper. Here you can find useful cheetsheets for flex, background, position and so on.
+
+## Author
+
+- Frontend Mentor - [@svetikbaihe](https://www.frontendmentor.io/profile/svetikbaihe)
+
+## Acknowledgments
+
+- Kudos to my mentor - [@ArtemPapusha] https://github.com/ArtemPapusha 
+

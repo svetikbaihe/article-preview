@@ -1,10 +1,10 @@
 import React from "react";
-import { AvatarProps } from "./types";
 import Typography from "@elements/Typography";
-import styles from "./styles.module.scss";
+import { AvatarProps } from "./types";
 import { FaCircleUser } from "react-icons/fa6";
+import styles from "./styles.module.scss";
 
-const Avatar: React.FC<AvatarProps> = ({ img, name, date}) => {
+const Avatar: React.FC<AvatarProps> = ({ img, name, date }) => {
   return (
     <div className={styles.avatarWrapper}>
       {img ? (
@@ -15,18 +15,18 @@ const Avatar: React.FC<AvatarProps> = ({ img, name, date}) => {
       <div className={styles.infoWrapper}>
         <Typography
           text={name}
-          type='overline'
-          color='dark-grayish'
-          weight='bold'
-          element='span'
+          type="overline-1"
+          color="dark-grayish"
+          weight="bold"
+          element="span"
         />
 
         <Typography
           text={date}
-          type='overline'
-          color='light'
-          weight='medium'
-          element='span'
+          type="overline-1"
+          color="grayish-blue"
+          weight="medium"
+          element="span"
         />
       </div>
     </div>

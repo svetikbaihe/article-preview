@@ -1,0 +1,36 @@
+.article {
+  @apply bg-white min-w-[19.875rem] mx-[1.5625rem] my-[4.625rem] rounded-lg md:grid md:max-w-3xl;
+  @apply md:grid-cols-[1fr_2fr];
+}
+
+.article_img {
+  @apply bg-[url('/images/drawers.jpg')] bg-cover w-full min-h-[12.5rem] mb-10 max-[728px]:rounded-t-lg md:rounded-l-lg md:mb-0;
+}
+
+.content_wrapper {
+  @apply flex flex-col;
+}
+
+.article_text_wrapper {
+  @apply px-[1.93rem] mb-[2rem] md:mt-[2.375rem];
+}
+
+.article_subtitle {
+  @apply mb-[1.125rem];
+}
+
+.avatar_links_wrapper {
+  @apply flex justify-between px-[1.93rem] pb-5 relative items-center;
+}
+
+.popover_wrapper {
+  @apply flex gap-[1.312rem] items-center;
+}
+
+.buttons_wrapper {
+  @apply flex justify-evenly gap-[0.625rem];
+}
+
+.popover_wrapper a svg {
+  @apply w-[1.625rem] h-[1.625rem] bg-white rounded-full;
+}

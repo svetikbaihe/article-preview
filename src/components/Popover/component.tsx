@@ -1,51 +1,55 @@
 import React, { PropsWithChildren, useState } from "react";
-
-import { useMediaQuery } from "react-responsive";
-import cn from "classnames";
-
 import Button from "@elements/Button";
+import { PopoverProps } from "./types";
+import { useMediaQuery } from "react-responsive";
 import { DESKTOP_QUERY } from "@constants/app";
-
+import cn from "classnames";
 import styles from "./styles.module.scss";
-
-export interface PopoverProps {
-  buttonIcon: React.ElementType;
-}
 
 const Popover: React.FC<PropsWithChildren<PopoverProps>> = ({
   children,
   buttonIcon,
 }) => {
   const [isOpen, setOpen] = useState(false);
-  const isDesktop = useMediaQuery({ query: DESKTOP_QUERY })
+  const isDesktop = useMediaQuery({ query: DESKTOP_QUERY });
 
   const handleTogglePopover = () => {
-    setOpen((prevIsOpen) => {
-      return !prevIsOpen;
-    });
+    setOpen((prevIsOpen) => !prevIsOpen);
   };
 
-  // return (
-  //   <div className="relative flex min-w-full items-center justify-end">
-  //     <Button
-  //       onClick={handleTogglePopover}
-  //       Icon={buttonIcon}
-  //       className="z-[3]"
-  //     />
+  const classNameButton = cn({
+    [styles.buttonPopoverFocus]: isOpen,
+  });
 
-  //     {isOpen && <div className={cn(styles.mobilePopover)}>{children}</div>}
-  //   </div>
-  // );
+  const classNameButtonIcon = cn({
+    [styles.buttonIconPopoverFocus]: isOpen,
+  });
+
+  if (isDesktop) {
+    return (
+      <div>
+        <Button
+          onClick={handleTogglePopover}
+          Icon={buttonIcon}
+          className={classNameButton}
+          classNameIcon={classNameButtonIcon}
+        />
+
+        {isOpen && <div className={styles.desktopPopover}>{children}</div>}
+      </div>
+    );
+  }
 
   return (
-    <div>
+    <div className={styles.shareButton}>
       <Button
         onClick={handleTogglePopover}
         Icon={buttonIcon}
-        className="z-[3]"
+        className={classNameButton}
+        classNameIcon={classNameButtonIcon}
       />
 
-      {isOpen && <div className={cn(styles.desktopPopover)}>{children}</div>}
+      {isOpen && <div className={styles.mobilePopover}>{children}</div>}
     </div>
   );
 };
