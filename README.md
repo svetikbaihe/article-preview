@@ -29,7 +29,8 @@ Users should be able to:
 
 ![Popover for screens more than 960px](public/screenshots/More-than-960px.png)
 ![Popover for screens between 960px-767px](public/screenshots/960px-767px.png)
-![Popover for screens less than 767px](public/screenshots/Less-than-767px.png)
+![Mobile version with popover](public/screenshots/mobile_with_popover.png)
+![Mobile version without popover](public/screenshots/mobile_with_popover.png)
 
 ### Links
 
